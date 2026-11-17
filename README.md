@@ -83,17 +83,14 @@ For detailed instructions, read [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## 🛠️ Tech Stack
 
-The website's implementation uses the technologies configured in this repository.
+The current application is built with:
 
-Depending on the project configuration, these may include:
-
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-- Vercel
-
-Check the project configuration files for the exact dependencies and versions.
+- **Next.js 16** — App Router and server-rendered pages
+- **React 19** — UI components
+- **TypeScript 5** — typed application code
+- **Tailwind CSS 4** — styling
+- **ESLint 9** — code-quality checks
+- **Vercel** — production hosting
 
 ## 💻 Local Development
 
@@ -101,11 +98,9 @@ Want to run the website locally or help improve it?
 
 ### Prerequisites
 
-Install the following if required by the project's configuration:
-
 - Git
-- Node.js
-- npm
+- Node.js 20.9 or newer
+- npm (included with Node.js)
 
 ### Setup
 
@@ -114,11 +109,6 @@ Clone the repository:
 ```bash
 git clone https://github.com/shashankpandey04/hacktoberfest-meetup-phagwara.git
 cd hacktoberfest-meetup-phagwara
-```
-
-Install dependencies:
-
-```bash
 npm install
 ```
 
@@ -128,9 +118,16 @@ Start the development server:
 npm run dev
 ```
 
-Open the local URL displayed in your terminal, typically `http://localhost:3000`.
+Open the local URL printed by Next.js (usually `http://localhost:3000`).
 
-**Note:** These instructions assume the repository uses a standard Next.js setup with npm. Check `package.json` for the available scripts before running commands.
+### Available checks
+
+```bash
+npm run lint
+npm run build
+```
+
+Run the lint check before opening a pull request. The production build also catches route, TypeScript, and bundling errors.
 
 ## 🤝 Contributing
 
